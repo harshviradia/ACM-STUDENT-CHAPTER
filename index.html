@@ -20,7 +20,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 		<!-- Web Fonts  -->
-		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CLora:400,500,700&display=swap" rel="stylesheet" type="text/css">
+		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800%7CShadows+Into+Light&display=swap" rel="stylesheet" type="text/css">
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -37,11 +37,8 @@
 		<link rel="stylesheet" href="css/theme-blog.css">
 		<link rel="stylesheet" href="css/theme-shop.css">
 
-		<!-- Demo CSS -->
-		<link rel="stylesheet" href="css/demos/demo-one-page-agency.css">
-
 		<!-- Skin CSS -->
-		<link id="skinCSS" rel="stylesheet" href="css/skins/skin-one-page-agency.css">
+		<link id="skinCSS" rel="stylesheet" href="css/skins/default.css">
 
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
@@ -50,161 +47,120 @@
 		<script src="vendor/modernizr/modernizr.min.js"></script>
 
 	</head>
-	<body data-plugin-scroll-spy data-plugin-options="{'target': '.wrapper-spy'}">
-
+	<body id="body" class="one-page alternative-font-5" data-plugin-scroll-spy data-plugin-options="{'target': ''}">
 		<div class="body">
-			<header id="header" data-plugin-options="{'stickyEnabled': true, 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAtElement': '#header', 'stickySetTop': '0', 'stickyChangeLogo': false}">
-				<div class="header-body">
-					<div class="header-container container-fluid px-0">
+
+			<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
+				<div class="header-body border-top-0 bg-dark box-shadow-none">
+					<div class="header-container container">
 						<div class="header-row">
-							<div class="header-column w-lg-25pct">
+							<div class="header-column">
 								<div class="header-row">
-									<div class="header-logo px-4">
-										<a href="demo-one-page-agency.html" >
-											<img alt="Porto One Page Agency" width="500" height="33" src="img/logo.png">
+									<div class="header-logo">
+										<a href="index.html">
+											<img alt="Porto" width="250" height="40" src="img/logo.webp">
 										</a>
 									</div>
 								</div>
 							</div>
-							<div class="header-column justify-content-center w-lg-100pct">
+							<div class="header-column justify-content-end">
 								<div class="header-row">
-									<div class="header-nav justify-content-center">
-										<div class="header-nav-main header-nav-main-effect-1 header-nav-main-sub-effect-1">
-											<nav class="wrapper-spy collapse">
+									<div class="header-nav header-nav-links header-nav-dropdowns-dark header-nav-light-text order-2 order-lg-1">
+										<div class="header-nav-main header-nav-main-font-lg header-nav-main-font-lg-upper-2 header-nav-main-mobile-dark header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-effect-2 header-nav-main-sub-effect-1">
+											<nav class="collapse">
 												<ul class="nav nav-pills" id="mainNav">
-													<li>
-														<a class="nav-link active" href="#home" data-hash>
+													<li class="dropdown">
+														<a data-hash class="nav-link active" href="#home">
 															Home
 														</a>
 													</li>
 													<li>
-														<a class="nav-link" href="#who-we-are" data-hash data-hash-offset="32">
-															Who We Are
-														</a>
+														<a class="nav-link" data-hash data-hash-offset="68" href="#who-we-are">WHO WE ARE</a>
 													</li>
 													<li>
-														<a class="nav-link" href="#cases" data-hash data-hash-offset="32">
-															Cases
-														</a>
+														<a class="nav-link" data-hash data-hash-offset="68" href="#what-we-do">ACTIVITIES</a>
 													</li>
 													<li>
-														<a class="nav-link" href="#what-we-do" data-hash data-hash-offset="32">
-															Activities
-														</a>
+														<a class="nav-link" data-hash data-hash-offset="68" href="#our-team">Clients</a>
 													</li>
 													<li>
-														<a class="nav-link" href="#our-team" data-hash data-hash-offset="32">
-															Our Team
-														</a>
+														<a class="nav-link" data-hash data-hash-offset="68" href="#team">Meet the Team</a>
 													</li>
 													<li>
-														<a class="nav-link" href="#googlemaps" data-hash>
-															Contact Us
-														</a>
+														<a class="nav-link" data-hash data-hash-offset="68" href="#googlemaps">Contact Us</a>
 													</li>
 												</ul>
 											</nav>
 										</div>
+										
+										<button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
+											<i class="fas fa-bars"></i>
+										</button>
 									</div>
-								</div>
-							</div>
-							<div class="header-column w-100pct w-lg-25pct justify-content-end">
-								<div class="header-row px-4">
-									<div class="d-none d-sm-flex align-items-center">
-										<img width="30" height="30" src="img/icons/phone.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light me-1'}" />
-										<a href="tel:02697265011" class="text-color-light font-weight-semibold opacity-hover-9 text-decoration-none">02697 265 011</a>
-									</div>
-									<button class="btn header-btn-collapse-nav btn-gradient" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav">
-										<i class="fas fa-bars"></i>
-									</button>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</header>
+
 			<div role="main" class="main">
 
-				
-				<div class="position-relative">
-					<div class="d-none d-sm-block position-absolute top-50pct transform3dy-n50 right-15 z-index-3 pe-3">
-						<ul class="d-flex flex-column social-icons social-icons-clean social-icons-icon-light social-icons-medium">
-							<li class="social-icons-instagram">
-								<a href="https://www.instagram.com/it_cspit_charusat/" class="text-color-quaternary" target="_blank" title="Instagram">
-									<i class="fab fa-instagram"></i>
-								</a>
-							</li>
-							<li class="social-icons-twitter my-2">
-								<a href="https://twitter.com/CSPIT_IT" class="text-color-quaternary" target="_blank" title="Twitter">
-									<i class="fab fa-twitter"></i>
-								</a>
-							</li>
-							<li class="social-icons-facebook">
-								<a href="https://www.facebook.com/kdpit_charusat-102249558172679" class="text-color-quaternary" target="_blank" title="Facebook">
-									<i class="fab fa-facebook-f"></i>
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div id="home" class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual custom-dots-style-1 dots-inside dots-horizontal-center show-dots-hover show-dots-xs dots-light nav-style-1 nav-inside nav-inside-plus nav-light nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000, 'autoplay': false}" style="height: 100vh;">
-						<div class="owl-stage-outer">
-							<div class="owl-stage">
-											
-								<!-- Carousel Slide 1 -->
-								<div class="owl-item position-relative">
-									<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0 animated kenBurnsToRightTop" style="background-image: url(img/slides/slide-1.jpg); background-size: cover; background-position: center; animation-duration: 20s;"></div>
-									<div class="container position-relative z-index-3 h-100">
-										<div class="row justify-content-start align-items-center h-100">
-											<div class="col-lg-7 text-center text-sm-start mb-4 pb-5 pb-lg-0">
-												<!-- <h1 class="d-inline-block text-color-light font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-													ACM STUDENT CHAPTER | CHARUSAT UNIVERSITY 
-													<span class="custom-highlight-text-1 alternative-font-3 text-color-secondary d-none d-md-block">
-														<span data-plugin-animated-letters data-plugin-options="{'startDelay': 2200, 'minWindowWidth': 0}">Be ITian</span> 
-														<img src="img/blue-line.png" class="img-fluid appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="3000" data-appear-animation-duration="2s" alt="" />
-													</span>
-												</h1> -->
-												<!-- <a href="#who-we-are" class="btn btn-gradient custom-btn-effect-1 custom-border-radius-1 d-inline-flex align-items-center font-weight-semibold text-3-5 btn-px-5 btn-py-3 appear-animation" data-hash data-hash-offset="32" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-appear-animation-duration="1.7s">
-													GET STARTED
-													<img width="15" height="15" src="img/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-light position-relative bottom-1 ms-4'}" />
-												</a> -->
-											</div>
-										</div>
-									</div>
-								</div>
+				<div class="d-none d-sm-block position-absolute top-50pct transform3dy-n50 right-15 z-index-3 pe-3">
+					<ul
+						class="d-flex flex-column social-icons social-icons-clean social-icons-icon-light social-icons-medium">
+						<li class="social-icons-instagram">
+							<a href="https://www.instagram.com/it_cspit_charusat/" class="text-color-quaternary"
+								target="_blank" title="Instagram">
+								<i class="fab fa-instagram"></i>
+							</a>
+						</li>
+						<li class="social-icons-twitter my-2">
+							<a href="https://twitter.com/CSPIT_IT" class="text-color-quaternary" target="_blank"
+								title="Twitter">
+								<i class="fab fa-twitter"></i>
+							</a>
+						</li>
+						<li class="social-icons-facebook">
+							<a href="https://www.facebook.com/kdpit_charusat-102249558172679"
+								class="text-color-quaternary" target="_blank" title="Facebook">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
 
-								<!-- Carousel Slide 2 -->
-								<div class="owl-item position-relative" style="background-image: url(img/slides/slide-2.jpg); background-size: cover; background-position: center;">
-									<div class="container position-relative z-index-3 h-100">
-										<div class="row justify-content-center align-items-center h-100">
-											<div class="col-lg-7 text-center mb-4 pb-5 pb-lg-0">
-												<h2 class="text-color-light font-weight-semibold text-3 text-sm-4 line-height-1 positive-ls-2 mb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-													PORTO AGENCY - NEW YORK / NY
-												</h2>
-												<h1 class="text-color-light font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
-													Creative Web Design
-												</h1>
-												<p class="text-4 text-color-grey px-md-5 pb-3 mx-md-5 mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1400">Porto is simply the best choice for your new website. The most complete package in the world. </p>
-												<a href="#who-we-are" class="btn btn-gradient custom-btn-effect-1 custom-border-radius-1 d-inline-flex align-items-center font-weight-semibold text-3-5 btn-px-5 btn-py-3 appear-animation" data-hash data-hash-offset="32" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-appear-animation-duration="1.7s">
-													GET STARTED
-													<img width="15" height="15" src="img/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-light position-relative bottom-1 ms-4'}" />
-												</a>
-											</div>
+				<div id="home" class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual custom-dots-style-1 dots-inside dots-horizontal-center show-dots-hover show-dots-xs dots-light nav-style-1 nav-inside nav-inside-plus nav-light nav-md nav-font-size-md show-nav-hover mb-0" data-plugin-options="{'autoplayTimeout': 7000, 'autoplay': false}" style="height: 100vh;">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+										
+							<!-- Carousel Slide 1 -->
+							<div class="owl-item position-relative">
+								<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0 animated kenBurnsToRightTop" style="background-image: url(img/slides/slide-1.webp); background-size: cover; background-position: center; animation-duration: 20s;"></div>
+								<div class="container position-relative z-index-3 h-100">
+									<div class="row justify-content-start align-items-center h-100">
+										<div class="col-lg-7 text-center text-sm-start mb-4 pb-5 pb-lg-0">
+											<!-- <h1 class="d-inline-block text-color-light font-weight-bold text-11 text-sm-13 text-md-14 line-height-1 position-relative mb-3 pb-1 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1200">
+												ACM STUDENT CHAPTER | CHARUSAT UNIVERSITY 
+												<span class="custom-highlight-text-1 alternative-font-3 text-color-secondary d-none d-md-block">
+													<span data-plugin-animated-letters data-plugin-options="{'startDelay': 2200, 'minWindowWidth': 0}">Be ITian</span> 
+													<img src="img/blue-line.webp" class="img-fluid appear-animation" data-appear-animation="fadeInRightShorterPlus" data-appear-animation-delay="3000" data-appear-animation-duration="2s" alt="" />
+												</span>
+											</h1> -->
+											<!-- <a href="#who-we-are" class="btn btn-gradient custom-btn-effect-1 custom-border-radius-1 d-inline-flex align-items-center font-weight-semibold text-3-5 btn-px-5 btn-py-3 appear-animation" data-hash data-hash-offset="32" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1600" data-appear-animation-duration="1.7s">
+												GET STARTED
+												<img width="15" height="15" src="img/icons/arrow-down.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'removeClassAfterInit': 'fadeIn', 'extraClass': 'svg-fill-color-light position-relative bottom-1 ms-4'}" />
+											</a> -->
 										</div>
 									</div>
 								</div>
-							
 							</div>
-						</div>
-						<div class="owl-dots mb-5">
-							<button role="button" class="owl-dot active">
-								<span></span>
-							</button>
-							<button role="button" class="owl-dot">
-								<span></span>
-							</button>
+						
 						</div>
 					</div>
 				</div>
+
+
 
 				<section id="who-we-are" class="section section-height-3 bg-transparent border-0 m-0">
 					<div class="container py-4">
@@ -220,34 +176,38 @@
 							</div>
 							<div class="col-5 col-sm-7 col-md-12 col-lg-6 text-center">
 								<div class="position-relative d-inline-flex">
-									<img src="img/generic/generic-2-small.jpg" class="img-fluid rounded-circle box-shadow-5 position-absolute top-50pct transform3dy-n50 z-index-3" alt="" style="right: 75%;" />
-									<img src="img/generic/generic-3-small.jpg" class="img-fluid rounded-circle box-shadow-5 z-index-2" width="260" alt="" />
-									<img src="img/generic/generic-1-small.jpg" class="img-fluid rounded-circle box-shadow-5 position-absolute top-50pct transform3dy-n50 z-index-1" alt="" style="left: 75%;" />
+									<img src="img/generic/generic-2-small.webp" class="img-fluid rounded-circle box-shadow-5 position-absolute top-50pct transform3dy-n50 z-index-3" alt="" style="right: 75%;" />
+									<img src="img/generic/generic-3-small.webp" class="img-fluid rounded-circle box-shadow-5 z-index-2" width="260" alt="" />
+									<img src="img/generic/generic-1-small.webp" class="img-fluid rounded-circle box-shadow-5 position-absolute top-50pct transform3dy-n50 z-index-1" alt="" style="left: 75%;" />
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				
+<!-- About Department -->
 
 				<section id="cases" class="section parallax border-0 p-0 m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5, 'scrollableParallax': true, 'scrollableParallaxMinWidth': 991, 'startOffset': 5, 'cssProperty': 'width', 'cssValueStart': 40, 'cssValueEnd': 100, 'cssValueUnit': 'vw'}">
 					<div class="d-flex justify-content-center">
 						<div class="scrollable-parallax-wrapper bg-gradient overflow-hidden">
-							<div class="container custom-container-style-3 custom-container-position-1 py-5 mx-0">
+							<div class="container custom-container-style-2 custom-container-position-1 py-5 mx-0">
 								<div class="row align-items-center">
-									<div class="col-lg-6 pe-lg-5 mb-5 mb-lg-0">
+									<div class="col-lg-2 pe-lg-5 mb-5 mb-lg-10">
+									</div>
+									<div class="col-lg-4 pe-lg-5 mb-5 mb-lg-10">
 										<img width="400" height="400" src="img/mockup.svg" alt="" class="img-fluid" />
 									</div>
-									<div class="col-5 col-sm-7 col-md-12 col-lg-6">
+									<div class="col-24 col-sm-7 col-md-6 col-lg-6">
 										<h2 class="text-color-light font-weight-bold text-transform-none text-8 mb-3">DEPARTMENT OF INFORMATION TECHNOLOGY</h2>
-										<p class="text-color-light font-weight-light text-3-5 pb-1 mb-4" style="text-align: justify;">The Department of Information Technology offers B.Tech. and M.Tech. in Information Technology. The department has strong collaboration with industries and has signed MOU with many leading industries. The graduates have found remarkable placements in prestigious national and international companies and many are pursuing their higher studies from premier institutes in India and abroad. The department has competent and devoted faculty. Department was accredited for two year w.e.f 01/07/2016 by National Board of Accreditation. </p>
+										<p class="text-color-light font-weight-light text-3-5 pb-1 mb-4" style="text-align: justify;">The Department of Information Technology offers <a href="https://charusat.ac.in/cspit/it/" style="color: #ffffff; text-decoration: underline; font-size: 18px;" ><b>B.Tech.</b></a> and <a href="https://charusat.ac.in/pgdcs/" style="font-size: 18px; color: #ffffff; text-decoration: underline;"><b>PGDCS</b></a> in Information Technology. The department has strong collaboration with industries and has signed MOU with many leading industries. The graduates have found remarkable placements in prestigious national and international companies and many are pursuing their higher studies from premier institutes in India and abroad. The department has competent and devoted faculty. Department was accredited for two year w.e.f 01/07/2016 by National Board of Accreditation. </p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
+
+<!-- Activities  -->
 
 				<section id="what-we-do" class="section bg-transparent overflow-hidden border-0 m-0 pb-0">
 					<div class="container pt-5 mt-2">
@@ -264,14 +224,12 @@
 										</div>
 									</div>
 			 						<a href="activities.html" class="d-inline-flex align-items-center text-color-primary font-weight-bold text-4 text-decoration-none custom-link-effect-1" data-hash>
-										KNOW MORE
+										CLICK ME
 									</a>
 		 						</div>
 							</div>
 							<div class="col-lg-5 col-xl-7 ps-0 ps-sm-5 pe-0 pt-lg-5 pt-xl-0 mt-lg-5 mt-xl-0">
 								<div class="position-relative">
-									<br>
-									<br>
 									<br>
 									<img width="593" height="1500" src="img/desktop-ss.svg" class="img-fluid box-shadow-5 appear-animation" data-appear-animation="fadeInUpShorter" alt="" />
 								</div>
@@ -279,6 +237,12 @@
 						</div>
 					</div>
 				</section>
+
+<!-- Team -->
+
+
+
+
 
 				<section id="our-team" class="section section-height-3 bg-transparent border-0 m-0">
 					<div class="container pb-4">
@@ -292,172 +256,67 @@
 								</div>
 							</div>
 						</div>
-						<div class="row">
-							<div class="col appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-								<div class="owl-carousel-wrapper" style="height: 373px;">
-									<div class="owl-carousel carousel-shadow-1 carousel-shadow-1-bold owl-theme dots-horizontal-center custom-dots-style-1 dots-dark mb-0" data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 2}, '992': {'items': 2}, '1200': {'items': 3}, '1440': {'items': 3}}, 'margin': 20, 'loop': false, 'nav': false, 'dots': true, 'dotsVerticalOffset': '30px', 'autoplay': false, 'autoplayTimeout': 7000}">
-										<a href="#team-content-1" class="popup-with-zoom-anim text-decoration-none">
-											<div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-												<img src="img/team/team-1.jpg" class="card-img-top border-radius-0 opacity-hover-8" alt="John Doe Image" />
-												<div class="card-body text-center px-4 py-5">
-													<h2 class="card-title alternative-font-4 text-color-dark text-color-hover-primary font-weight-bold line-height-1 text-5 mb-1">John Doe</h2>
-													<p class="text-color-grey text-2-5 mb-3">CEO & FOUNDER</p>
-													<p class="font-weight-light text-color-dark line-height-7 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-													<span class="font-weight-semibold text-2">
-														VIEW MORE
-													</span>
-												</div>
-											</div>
-										</a>
-										<a href="#team-content-2" class="popup-with-zoom-anim text-decoration-none">
-											<div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-												<img src="img/team/team-2.jpg" class="card-img-top border-radius-0 opacity-hover-8" alt="John Doe Image" />
-												<div class="card-body text-center px-4 py-5">
-													<h2 class="card-title alternative-font-4 text-color-dark text-color-hover-primary font-weight-bold line-height-1 text-5 mb-1">Janice Doe</h2>
-													<p class="text-color-grey text-2-5 mb-3">CEO & FOUNDER</p>
-													<p class="font-weight-light text-color-dark line-height-7 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-													<span class="font-weight-semibold text-2">
-														VIEW MORE
-													</span>
-												</div>
-											</div>
-										</a>
-										<a href="#team-content-3" class="popup-with-zoom-anim text-decoration-none">
-											<div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-												<img src="img/team/team-3.jpg" class="card-img-top border-radius-0 opacity-hover-8" alt="John Doe Image" />
-												<div class="card-body text-center px-4 py-5">
-													<h2 class="card-title alternative-font-4 text-color-dark text-color-hover-primary font-weight-bold line-height-1 text-5 mb-1">Matt Doe</h2>
-													<p class="text-color-grey text-2-5 mb-3">CEO & FOUNDER</p>
-													<p class="font-weight-light text-color-dark line-height-7 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-													<span class="font-weight-semibold text-2">
-														VIEW MORE
-													</span>
-												</div>
-											</div>
-										</a>
-										<a href="#team-content-1" class="popup-with-zoom-anim text-decoration-none">
-											<div class="card custom-card-style-1 border-0 border-radius-0 custom-box-shadow-1">
-												<img src="img/team/team-1.jpg" class="card-img-top border-radius-0 opacity-hover-8" alt="John Doe Image" />
-												<div class="card-body text-center px-4 py-5">
-													<h2 class="card-title alternative-font-4 text-color-dark text-color-hover-primary font-weight-bold line-height-1 text-5 mb-1">Ashley Doe</h2>
-													<p class="text-color-grey text-2-5 mb-3">CEO & FOUNDER</p>
-													<p class="font-weight-light text-color-dark line-height-7 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc viverra erat orci, ac auctor lacus tincidunt ut...</p>
-													<span class="font-weight-semibold text-2">
-														VIEW MORE
-													</span>
-												</div>
-											</div>
-										</a>
-									</div>
-								</div>
+					</div>
 
-								<!-- Team Members Lightbox Content -->
-								<div id="team-content-1" class="dialog dialog-sm zoom-anim-dialog mfp-hide mfp-close-out p-4">
-									<div class="row mt-1">
-										<div class="col px-3 mb-4 mb-md-0">
-											<img src="img/team/team-1.jpg" class="custom-rounded-image img-fluid mb-4" alt="">
-										</div>
-									</div>
-									<div class="row mb-1">
-										<div class="col px-3">
-											<div class="d-flex justify-content-between">
-												<div>
-													<h2 class="font-weight-semibold text-color-dark text-5 line-height-1 mb-0">John Doe</h2>
-													<p class="mb-3">CEO & Founder</p>
-												</div>
-												<ul class="social-icons custom-social-icons-style-2 text-center">
-													<li class="social-icons-facebook">
-														<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													</li>
-													<li class="social-icons-twitter">
-														<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-															<i class="fab fa-twitter"></i>
-														</a>
-													</li>
-													<li class="social-icons-linkedin">
-														<a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<p class="text-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at elementum lacus. Fusce luctus urna ac mauris consequat, ac eleifend odio imperdiet. Sed euismod tempor orci, ullamcorper accumsan justo semper. </p>	
-										</div>
-									</div>
-								</div>
-								<div id="team-content-2" class="dialog dialog-sm zoom-anim-dialog mfp-hide mfp-close-out p-4">
-									<div class="row mt-1">
-										<div class="col px-3 mb-4 mb-md-0">
-											<img src="img/team/team-2.jpg" class="custom-rounded-image img-fluid mb-4" alt="">
-										</div>
-									</div>
-									<div class="row mb-1">
-										<div class="col px-3">
-											<div class="d-flex justify-content-between">
-												<div>
-													<h2 class="font-weight-semibold text-color-dark text-5 line-height-1 mb-0">Janice Doe</h2>
-													<p class="mb-3">CEO & Founder</p>
-												</div>
-												<ul class="social-icons custom-social-icons-style-2 text-center">
-													<li class="social-icons-facebook">
-														<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													</li>
-													<li class="social-icons-twitter">
-														<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-															<i class="fab fa-twitter"></i>
-														</a>
-													</li>
-													<li class="social-icons-linkedin">
-														<a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<p class="text-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at elementum lacus. Fusce luctus urna ac mauris consequat, ac eleifend odio imperdiet. Sed euismod tempor orci, ullamcorper accumsan justo semper. </p>	
-										</div>
-									</div>
-								</div>
-								<div id="team-content-3" class="dialog dialog-sm zoom-anim-dialog mfp-hide mfp-close-out p-4">
-									<div class="row mt-1">
-										<div class="col px-3 mb-4 mb-md-0">
-											<img src="img/team/team-3.jpg" class="custom-rounded-image img-fluid mb-4" alt="">
-										</div>
-									</div>
-									<div class="row mb-1">
-										<div class="col px-3">
-											<div class="d-flex justify-content-between">
-												<div>
-													<h2 class="font-weight-semibold text-color-dark text-5 line-height-1 mb-0">Matt Doe</h2>
-													<p class="mb-3">CEO & Founder</p>
-												</div>
-												<ul class="social-icons custom-social-icons-style-2 text-center">
-													<li class="social-icons-facebook">
-														<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-															<i class="fab fa-facebook-f"></i>
-														</a>
-													</li>
-													<li class="social-icons-twitter">
-														<a href="http://www.twitter.com/" target="_blank" title="Twitter">
-															<i class="fab fa-twitter"></i>
-														</a>
-													</li>
-													<li class="social-icons-linkedin">
-														<a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
-															<i class="fab fa-linkedin-in"></i>
-														</a>
-													</li>
-												</ul>
-											</div>
-											<p class="text-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at elementum lacus. Fusce luctus urna ac mauris consequat, ac eleifend odio imperdiet. Sed euismod tempor orci, ullamcorper accumsan justo semper. </p>	
-										</div>
-									</div>
-								</div>
+					<div class="container pt-2">
+						<div class="row pb-5">
+							<div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
+								<span class="thumb-info thumb-info-hide-wrapper-bg">
+									<span class="thumb-info-wrapper">
+										<a href="https://vidwan.inflibnet.ac.in/profile/124948">
+											<img src="img/team/team-1.webp" class="img-fluid" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Dr. Parth Shah</span>
+												<span class="thumb-info-type">Chair person</span>
+											</span>
+										</a>
+									</span><br>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-social-icons">
+											<a href="https://www.linkedin.com/in/parth788/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
 							</div>
+							<div class="col-sm-6 col-lg-4 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="200">
+								<span class="thumb-info thumb-info-hide-wrapper-bg">
+									<span class="thumb-info-wrapper">
+										<a href="https://vidwan.inflibnet.ac.in/profile/159905">
+											<img src="img/team/team-2.webp" class="img-fluid" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Prof. Purvi Prajapati</span>
+												<span class="thumb-info-type">Member Chairpersion</span>
+											</span>
+										</a>
+									</span><br>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-social-icons">
+											<a href="https://www.linkedin.com/in/purvi-prajapati-37ba6651/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+							<div class="col-sm-6 col-lg-4 mb-4 mb-sm-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="400">
+								<span class="thumb-info thumb-info-hide-wrapper-bg">
+									<span class="thumb-info-wrapper">
+										<a href="https://www.linkedin.com/in/harsh-viradia-3a5386191/">
+											<img src="img/team/team-3.webp" class="img-fluid" alt="">
+											<span class="thumb-info-title">
+												<span class="thumb-info-inner">Mr. Harsh Viradia</span>
+												<span class="thumb-info-type">Web Developer</span>
+											</span>
+										</a>
+									</span><br>
+									<span class="thumb-info-caption">
+										<span class="thumb-info-social-icons">
+											<a href="https://www.linkedin.com/in/harsh-viradia-3a5386191/"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></a>
+										</span>
+									</span>
+								</span>
+							</div>
+						</div>
+						</div>
+						
 						</div>
 					</div>
 				</section>
@@ -465,17 +324,18 @@
 				<div class="map-above" style="min-height: 600px;">
 
 					<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-					<div id="googlemaps" class="map-above-map google-map m-0" style="min-height: 600px;" data-spy-offset="20">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.4549923161917!2d72.81701291503946!3d22.5994785351689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e50cdaaaaaaab%3A0x6e4cd4981f598749!2sCSPIT+(Mech%2FCivil)!5e0!3m2!1sen!2sin!4v1545454662705" ></iframe>
+					<div class="map-above-map google-map m-0" style="min-height: 600px;" data-spy-offset="20">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.452036667474!2d72.81831131479257!3d22.599588985168857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e50c43cdea6c7%3A0x5074fe9e0c1c8bd!2sCharotar%20University%20of%20Science%20and%20Technology%20(CHARUSAT)!5e0!3m2!1sen!2sin!4v1624426816372!5m2!1sen!2sin" height="610px" width="100%" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 
+
 					<section class="map-above-content section border-0 m-0 p-0">
-						<div class="container pt-3 pt-sm-5 pt-md-0">
+						<div class="container pt-3 pt-sm-5 pt-md-0" >
 							<div class="row">
 								<div class="col-md-8 col-lg-6">
 									<div class="bg-dark p-5">
 										<div class="d-flex mt-4 mb-4">
-											<img width="30" height="3s0" src="img/icons/location.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light mt-1'}" />
+											<img width="30" height="30" src="img/icons/location.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light mt-1'}" />
 											<p class="text-color-light ms-2 mb-0">
 												<strong class="d-block text-3 mb-1">139, CHARUSAT Campus, Highway, Off, Nadiad - Petlad Rd, Changa, Gujarat 388421</strong>
 											</p>
@@ -484,40 +344,10 @@
 											<img width="40" height="40" src="img/icons/phone.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
 											<a href="tel:02697265011" class="d-inline-block text-color-light font-weight-bold text-decoration-none text-4 opacity-hover-9 ms-2">02697 265 011</a>
 										</div>
-										<form class="contact-form form-fields-size-md form-style-3 form-errors-light mb-2" action="php/contact-form.php" method="POST">
-											<div class="contact-form-success alert alert-success d-none mt-4">
-												<strong>Success!</strong> Your message has been sent to us.
-											</div>
-
-											<div class="contact-form-error alert alert-danger d-none mt-4">
-												<strong>Error!</strong> There was an error sending your message.
-												<span class="mail-error-message text-1 d-block"></span>
-											</div>
-
-											<input type="hidden" name="subject" value="Contact Message Received" />
-											<div class="row">
-												<div class="form-group col">
-													<input type="text" class="form-control" name="name" value="" placeholder="First Name" required>
-												</div>
-											</div>
-											<div class="row">
-												<div class="form-group col">
-													<input type="email" class="form-control" name="email" value="" placeholder="E-mail Address" required>
-												</div>
-											</div>
-											<div class="row">
-												<div class="form-group col">
-													<textarea class="form-control custom-textarea-style" rows="3" name="message" placeholder="Message" required></textarea>
-												</div>
-											</div>
-											<div class="row">
-												<div class="col">
-													<button type="submit" class="btn btn-gradient custom-border-radius-1 font-weight-semibold box-shadow-4 text-3-5 btn-px-5 btn-py-3" data-loading-text="Loading...">
-														<span class="px-3">SUBMIT</span>
-													</button>
-												</div>
-											</div>
-										</form>
+										<div class="d-flex align-items-center pb-2 mb-4">
+											<img width="40" height="40" src="img/icons/mail.svg" alt="" data-icon data-plugin-options="{'onlySVG': true, 'extraClass': 'svg-fill-color-light'}" />
+											<a href="mailto:parthshah.ce@charusat.ac.in" class="d-inline-block text-color-light font-weight-bold text-decoration-none text-4 opacity-hover-9 ms-2">Dr. Parh Shah</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -552,6 +382,11 @@
 										<a href="https://www.linkedin.com/in/cspit-it/" class="text-color-quaternary" target="_blank" title="Linkedin">
 											<i class="fab fa-linkedin-in"></i>
 										</a>
+									</li>
+									<li class="social-icons-instagram">
+										<a href="https://www.instagram.com/it_cspit_charusat/" class="text-color-quaternary" target="_blank" title="Instagram">
+											<i class="fab fa-instagram"></i>
+										</a>	
 									</li>
 								</ul>
 							</div>
@@ -613,7 +448,7 @@
 					address: "New York, NY 10017",
 					html: "<strong>Porto One Page Agency</strong><br>New York, NY 10017",
 					icon: {
-						image: "img/pin.png",
+						image: "img/pin.webp",
 						iconsize: [26, 46],
 						iconanchor: [12, 46]
 					},
